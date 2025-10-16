@@ -4,7 +4,7 @@ const app=express()
 const mongoose=require("mongoose")
 app.use(express.json())
 app.use(cors())
-mongoose.connect("mongodb://localhost:27017/counter")
+mongoose.connect("mongodb+srv://dheeraj:Dheeraj@1431@cluster0.xcpnmyo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 .then(()=>console.log("Mongo connected"))
 .catch((err)=>console.log("mongofailed",err))
 
